@@ -1,0 +1,165 @@
+### get all buyers
+GET http://localhost:3002/buyer
+
+### get single buyer
+GET http://localhost:3002/buyer/67ec87871663f3ed9943ec6f
+
+### create a buyer
+POST  http://localhost:3002/buyer
+Content-Type: application/json
+
+{
+   "firstName": "james",
+   "lastName": "elman",
+    "userName": "elman123"
+}
+
+### update buyer  buyerid
+Put http://localhost:3002/buyer/67edc8953425b8ea3e1321a3
+Content-Type: application/json
+
+{
+    "firstName": "Ray",
+    "lastName": "Ruppe",
+    "userName": "password1"
+}
+
+### delete buyer 
+DELETE http://localhost:3002/buyer/67edc8953425b8ea3e1321a3
+
+
+
+
+
+
+
+///---------------------------------------------------------sellers----------------------------------------------------///
+
+
+
+
+
+### get all sellers
+GET http://localhost:3002/seller
+
+### get single seller id
+GET http://localhost:3002/seller/67ec8bf94ef0728f310ba541
+
+### create seller 
+POST  http://localhost:3002/seller
+Content-Type: application/json
+
+{
+   "firstName": "Mick",
+   "lastName": "meets",
+    "userName": "mickymeet1"
+}
+
+### update seller sellerid
+Put http://localhost:3002/seller/67edca5c521e8634d2146b2f
+Content-Type: application/json
+
+{
+    "firstName": "mickey",
+    "lastName": "mets",
+    "userName": "mickmet1"
+}
+
+### delete buyer 
+DELETE http://localhost:3002/seller/67edca5c521e8634d2146b2f
+
+
+
+////-------------------------------------------------------------------products---------------------------------------///
+
+
+### getall products 
+GET http://localhost:3002/product/67ec8ea8298829fe0354a2f1
+
+### getsingle seller id then product id 
+GET http://localhost:3002/product/67ec8ea8298829fe0354a2f1/67ec91c468dc6eb701445de9
+
+### create product
+POST  http://localhost:3002/product/67ec8ea8298829fe0354a2f1
+Content-Type: application/json
+
+{
+   "productName": "jacket",
+   "description": "Nike jaket",
+    "price": 60
+}
+
+### update product sellerid then product id 
+Put http://localhost:3002/product/67ec8ea8298829fe0354a2f1/67edcb317020232cd22d00b8
+Content-Type: application/json
+
+{
+    "productName": "clothes",
+   "description": "brand new pair of nike shirts",
+    "price": 80
+}
+
+### delete product seller id then product id 
+Delete  http://localhost:3002/product/67ec8ea8298829fe0354a2f1/67edcb317020232cd22d00b8
+
+
+
+
+
+
+/// --------------------------------------------- order api ------------------------------///
+### get all orders buyerid 
+GET http://localhost:3002/order/67ed8c9cc3f27d1564aa4754
+
+### get a single order
+GET http://localhost:3002/order/67ec87871663f3ed9943ec6f/67eca60c7c60e0c039811a7a
+
+### create a order buyerid, sellerid, productid
+POST  http://localhost:3002/order/67ed8c9cc3f27d1564aa4754/67ec8ea8298829fe0354a2f1/67edb1bcea903d610092247f
+Content-Type: application/json
+
+{
+   "quantity": "2"
+}
+
+### update order  buyerid and orderid
+PUT  http://localhost:3002/order/67ed8c9cc3f27d1564aa4754/67edb27bea903d6100922480
+Content-Type: application/json
+
+{
+   "quantity": 1
+}
+
+### delete a order  buyerid and orderid
+Delete http://localhost:3002/order/67ec87871663f3ed9943ec6f/67ecae59c3f27d1564aa4753
+
+
+
+
+///------------------------------------------------------Payment API--------------------------------///
+
+### get all payments buyerid
+GET http://localhost:3002/payment/67ed8c9cc3f27d1564aa4754
+
+### get single payment buyerid and paymentid
+GET http://localhost:3002/payment/67ed8c9cc3f27d1564aa4754/67edb38bea903d6100922481
+
+### create a payment orderid
+POST  http://localhost:3002/payment/67edb27bea903d6100922480
+Content-Type: application/json
+
+{
+   "cardInfo": "23912342345"
+}
+
+### update a payment buyerid and paymentid
+PUT http://localhost:3002/payment/67ed8c9cc3f27d1564aa4754/67edb38bea903d6100922481
+Content-Type: application/json
+
+{
+   "cardInfo": "11111111111111111"
+}
+
+
+### delete payment buyerid and payment id
+Delete http://localhost:3002/payment/67ed8c9cc3f27d1564aa4754/67edb38bea903d6100922481

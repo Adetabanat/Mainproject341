@@ -1,0 +1,48 @@
+{
+  "name": "mainproject341",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "cor": "^0.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.15.0",
+    "node": "^18.20.8",
+    "passport": "^0.7.0",
+    "passport-github": "^1.1.0",
+    "passport-github2": "^0.1.12",
+    "swagger-ui-express": "^5.0.1",
+    "validate": "^5.2.0",
+    "validate.js": "^0.13.1",
+    "validatorjs": "^3.22.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.1.0",
+    "swagger-autogen": "^2.23.7"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahruppe/Mainproject341.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noahruppe/Mainproject341/issues"
+  },
+  "homepage": "https://github.com/noahruppe/Mainproject341#readme",
+  "description": ""
+}
